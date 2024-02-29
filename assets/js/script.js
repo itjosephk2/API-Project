@@ -32,11 +32,6 @@ function processOptions(form) {
 async function postForm(e) {
   // Form element to variable
   const FORM = processOptions(new FormData(document.getElementById('checksform')));
-
-  // test Code
-  for (let entry of FORM.entries()) {
-    console.log(entry);
-  }
   // Stes the method, header and body
   const RESPONSE = await fetch(API_URL, {
     method: 'POST',
