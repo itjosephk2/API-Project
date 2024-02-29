@@ -21,7 +21,9 @@ function processOptions(form) {
     }
   }
   // Array Editing
+  // deleted all elements with options
   form.delete('options');
+  // adds option back to the begining of the array
   form.append('options', optArray.join())
   return form;
 }
